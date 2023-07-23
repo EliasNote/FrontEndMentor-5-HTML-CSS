@@ -123,11 +123,13 @@ footer {
     color: white;
     padding: 250px 20px 60px 20px;
 }
+#footer-img {
+    padding-bottom: 30px;
+}
 #footer-content1 {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-top: 30px;
 }
 .footer-content11 {
     display: flex;
@@ -139,6 +141,11 @@ footer {
     flex-direction: column;
     gap: 30px;
     padding: 60px 0;
+}
+#footer-content2 div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 #footer-redes {
     display: flex;
@@ -158,6 +165,7 @@ footer {
 #footer-copyright {
     text-align: center;
     font-size: 14px;
+    padding-top: 30px;
 }
 @media screen and (min-width: 768px) {
     h1 {
@@ -200,6 +208,9 @@ footer {
         gap: 80px;
         padding: 50px 30px 50px 100px;
     }
+    #main1 img, #main3 img {
+        order: 2;
+    }
     main img {
         width: 40%;
         max-width: 400px;
@@ -208,5 +219,23 @@ footer {
     .main-content {
         max-width: 500px;
         padding: 0;
+    }
+    footer {
+        padding: 200px 10% 4% 10%;
+    }
+    #footer-content {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 30% 30% 30%;
+        gap: 4vw;
+        margin: auto;
+    }
+    #footer-content2 {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+    }
+    #footer-copyright {
+        text-align: end;
     }
 }
