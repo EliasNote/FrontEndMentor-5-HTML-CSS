@@ -40,6 +40,10 @@ header {
     font-size: 14px;
     font-weight: 600;
 }
+#header-header button:hover {
+    color: hsl(208, 11%, 55%);
+    cursor: pointer;
+}
 #header-content {
     text-align: center;
     width: 90%;
@@ -59,6 +63,10 @@ header {
     margin: 30px 0;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.105);
 }
+#header-content > div > button:hover {
+    background: hsla(322, 100%, 66%, 0.542);
+    cursor: pointer;
+}
 #header-content > div > p {
     font-size: 21px;
 }
@@ -74,6 +82,7 @@ main {
     padding: 100px 25px;
     text-align: center;
     height: fit-content;
+    justify-content: center;
 }
 main p{
     color: hsl(208, 11%, 55%);
@@ -85,7 +94,6 @@ main p{
     height: fit-content;
     display: flex;
     flex-direction: column;
-
 }
 .main-content {
     order: 2;
@@ -117,6 +125,10 @@ main p{
     box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.105);
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+}
+#main4 button:hover {
+    background: hsla(322, 100%, 66%, 0.542);
+    cursor: pointer;
 }
 footer {
     background: hsl(192, 100%, 9%);
@@ -162,6 +174,14 @@ footer {
     border: solid 1px white;
     border-radius: 50%;
 }
+#footer-redes a:hover{
+    border: solid 1px hsl(322, 100%, 66%);
+    cursor: pointer;
+}
+#footer-redes a:hover svg{
+    fill: hsl(322, 100%, 66%);
+    cursor: pointer;
+}
 #footer-copyright {
     text-align: center;
     font-size: 14px;
@@ -189,18 +209,16 @@ footer {
     }
     #header-content > div > button {
         font-size: 16px;
-        padding: 15px 60px;
+        padding: 20px 80px;
     }
     #header-content > img {
         width: 50%;
     }
     main {
         padding: 180px 80px;
-        max-width: 1500px;
-        margin: auto;
+        align-items: center;
     }
     #main1, #main2, #main3 {
-        width: 100%;
         flex-direction: row;
         text-align: start;
         justify-content: space-around;
@@ -214,11 +232,18 @@ footer {
     main img {
         width: 40%;
         max-width: 400px;
-
     }
     .main-content {
         max-width: 500px;
         padding: 0;
+    }
+    #main4 {
+        max-width: 1500px;
+        padding: 120px 150px;
+        margin-bottom: -270px;
+    }
+    #main4 button {
+        padding: 20px 80px;
     }
     footer {
         padding: 200px 10% 4% 10%;
